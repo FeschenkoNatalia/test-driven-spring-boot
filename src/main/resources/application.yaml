@@ -26,8 +26,11 @@ server:
 spring:
   docker:
     compose:
-      lifecycle-management: none
-      enabled: false
+      lifecycle-management: start_and_stop
+      enabled: true
+#      enable for local run
+#      lifecycle-management: none
+#      enabled: false
   sql:
     init:
       mode: never
